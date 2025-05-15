@@ -1,0 +1,76 @@
+body {
+  background: linear-gradient(to right, #6dd5fa, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+}
+.form-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Optional: spacing for radio buttons */
+.form-check-inline {
+  margin-right: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.dob-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.dob-container select {
+  padding: 10px;
+  border: 1px solid #c8e6c9;
+  border-radius: 6px;
+  width: calc(33% - 10px);
+  font-size: 1em;
+}
+
+/* Checkbox container with box highlighting */
+.checkbox-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f0f8ff; /* light blue highlight */
+  border: 2px solid #00c8ff; /* cyan border */
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+/* Optional hover effect */
+.checkbox-box:hover {
+  background-color: #e0f4ff;
+}
+
+/* Highlight only the checkbox button */
+.checkbox-box input[type="checkbox"] {
+  accent-color: #00c8ff;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Label remains normal */
+.checkbox-box label {
+  margin: 0;
+  color: #333;
+  cursor: pointer;
+}

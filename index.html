@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Registration Form</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="ind.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <h3 class="form-title">Registration Form</h3>
+      <form id="registrationForm">
+        <!-- Full Name -->
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" required />
+          <div class="error" id="nameError"></div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email ID</label>
+          <input type="email" class="form-control" id="email" required />
+          <div class="error" id="emailError"></div>
+        </div>
+
+        <!-- DOB -->
+        <div class="mb-3">
+          <label for="dob">Date of Birth:</label>
+          <div class="dob-container">
+            <select id="month"><option value="">Month</option></select>
+            <select id="day"><option value="">Day</option></select>
+            <select id="year"><option value="">Year</option></select>
+          </div>
+          <div id="dobError" class="error"></div>
+        </div>
+
+        <!-- Phone -->
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="phone" required />
+          <div class="error" id="phoneError"></div>
+        </div>
+
+        <!-- Gender -->
+        <div class="mb-3">
+          <label class="form-label d-block">Gender</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+            <label class="form-check-label" for="male">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="other" value="Other">
+            <label class="form-check-label" for="other">Other</label>
+          </div>
+          <div class="error" id="genderError"></div>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" required />
+          <div class="error" id="passwordError"></div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" required />
+          <div class="error" id="confirmPasswordError"></div>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="checkbox-box">
+          <input type="checkbox" id="termsCheck" />
+          <label for="termsCheck">I am not a Robot</label>
+        </div>
+        <div class="error" id="termsError"></div>
+
+        <!-- Buttons -->
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-success me-2">Submit</button>
+          <button type="reset" class="btn btn-primary">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Your custom JS -->
+  <script src="in.js"></script>
+</body>
+</html>
